@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 style="margin-bottom: 20px;margin-top: 15px;">Lista de Livros</h1>
+  <div class="card" *ngFor="let livro of livros">
+    <div class="card-header">
+      {{livro.genero}}
+    </div>
+    <div class="card-body" style="padding: 20px;">
+      <h5 class="card-title">{{livro.titulo}}</h5>
+      <p class="card-text">{{livro.autor}}</p>
+    </div>
+  </div>
+</div>
